@@ -15,6 +15,13 @@
       "when": 1752167412578,
       "tag": "0001_swift_titanium_man",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752252817727,
+      "tag": "0002_petite_shadowcat",
+      "breakpoints": true
     }
   ]
 }
