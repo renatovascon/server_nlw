@@ -44,7 +44,7 @@ export const createQuestionRoute: FastifyPluginCallbackZod = (app) => {
         )
         .limit(3)
 
-      let answer: string | null = null
+      let answer = ''
 
       if (chunks.length > 0) {
         const transcriptions = chunks.map((chunk) => chunk.transcription)

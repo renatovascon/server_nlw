@@ -13,7 +13,7 @@ export const createRoomsRoute: FastifyPluginCallbackZod = (app) => {
         }
     },
     async (request, reply) => {
-        const { name, description } = request.body;
+        const { name, description } = request.body as { name: string; description?: string };
         const result = await db.insert(schema.rooms).values({
             name,
             description
